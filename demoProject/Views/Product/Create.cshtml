@@ -1,0 +1,10 @@
+﻿@model Product
+<form asp-action="Create">
+    <input asp-for="Name"/>
+    <input asp-for="Description" />
+    <input asp-for="price" />
+    <select asp-for="CategoryId" asp-items="@ViewBag.ItemsCategoery">
+        <option value="">--Tat ca--</option>
+    </select>
+    <button type="submit">Luu</button>
+</form>
